@@ -24,7 +24,7 @@ The best practice is for the presenting view controller to dismiss the presented
  
 ###Interesting Code Snippets
 
-####Presented View Controller declareds the PresentedViewControllerDelegate protocol
+#####Presented View Controller declares the PresentedViewControllerDelegate protocol
 ```objectivec
 @protocol PresentedViewControllerDelegate <NSObject>
 - (void)dismissPresentedViewController;
@@ -32,13 +32,13 @@ The best practice is for the presenting view controller to dismiss the presented
 ```
 
 
-####Presenting View Controller adopts the PresentedViewControllerDelegate protocol
+#####Presenting View Controller adopts the PresentedViewControllerDelegate protocol
 ```objectivec
 @interface PresentingViewController : UIViewController <PresentedViewControllerDelegate>
 @end
 ```
 
-####Presenting View Controller implements dismissPresentedViewController
+#####Presenting View Controller implements dismissPresentedViewController
 ```objectivec
 - (void)dismissPresentedViewController
 {
@@ -46,14 +46,20 @@ The best practice is for the presenting view controller to dismiss the presented
 }
 ```
 
-####Presented View Controller has a weak reference to the delegate.
+#####Presented View Controller has a weak reference to the delegate.
 ```objectivec
 @property (nonatomic, weak) id <PresentedViewControllerDelegate> delegate;
 ```
 
+#####Presented View Controller uses the reference to the delegate.
+```objectivec
+- (IBAction)didSelectDone:(UIButton *)sender
+{
+    [self.delegate dismissPresentedViewController];
+}
+```
 
-
-####Prepare for Segue
+#####Prepare for Segue
 ```objectivec
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
