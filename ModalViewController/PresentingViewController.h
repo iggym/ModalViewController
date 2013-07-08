@@ -1,5 +1,5 @@
 //
-//  IGGViewController.h
+//  PresentingViewController.h
 //  ModalViewController
 //
 //  Created by Iggy Mwangi on 7/8/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface IGGViewController : UIViewController
+@interface PresentingViewController : UIViewController
 
 @end
