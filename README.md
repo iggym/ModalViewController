@@ -10,7 +10,14 @@ Overview
  
 Description
 -----------
-A Modal View Controller example with comments.
+A Modal View Controller example with comments. 
+There is a presenting view controller and a presented view controller
+
+The Presenting View Controller
+![alt presenter](https://github.com/iggym/ModalViewController/blob/master/Docs/PresentingViewController.png)
+ 
+ The Presented View Controller
+ ![alt presented](https://github.com/iggym/ModalViewController/blob/master/Docs/PresentedViewController.png)
  
 Requirements
 ------------
