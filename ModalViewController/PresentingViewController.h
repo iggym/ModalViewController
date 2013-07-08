@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PresentedViewController.h"
 
-@interface PresentingViewController : UIViewController
+@interface PresentingViewController : UIViewController <PresentedViewControllerDelegate>
 
 @end

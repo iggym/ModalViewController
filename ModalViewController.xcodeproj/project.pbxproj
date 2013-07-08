@@ -21,6 +21,8 @@
 		9B4A47BA178B3141005AE144 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4A4799178B3141005AE144 /* UIKit.framework */; };
 		9B4A47C2178B3141005AE144 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B4A47C0178B3141005AE144 /* InfoPlist.strings */; };
 		9B4A47C4178B3141005AE144 /* ModalViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4A47C3178B3141005AE144 /* ModalViewControllerTests.m */; };
+		9B4A47D2178B36C1005AE144 /* PresentingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4A47CF178B33C9005AE144 /* PresentingViewController.m */; };
+		9B4A47D3178B36C7005AE144 /* PresentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4A47D1178B351E005AE144 /* PresentedViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		9B4A47CD178B31F7005AE144 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		9B4A47CE178B33C9005AE144 /* PresentingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentingViewController.h; sourceTree = "<group>"; };
 		9B4A47CF178B33C9005AE144 /* PresentingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentingViewController.m; sourceTree = "<group>"; };
+		9B4A47D0178B351E005AE144 /* PresentedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentedViewController.h; sourceTree = "<group>"; };
+		9B4A47D1178B351E005AE144 /* PresentedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentedViewController.m; sourceTree = "<group>"; };
+		9B4A47D5178B38E4005AE144 /* PresentedViewController.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PresentedViewController.png; sourceTree = "<group>"; };
+		9B4A47D6178B38E4005AE144 /* PresentingViewController.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PresentingViewController.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,7 @@
 		9B4A4789178B3140005AE144 = {
 			isa = PBXGroup;
 			children = (
+				9B4A47D4178B3865005AE144 /* Docs */,
 				9B4A47CD178B31F7005AE144 /* README.md */,
 				9B4A479B178B3141005AE144 /* ModalViewController */,
 				9B4A47BD178B3141005AE144 /* ModalViewControllerTests */,
@@ -123,6 +130,8 @@
 				9B4A47AA178B3141005AE144 /* Main_iPad.storyboard */,
 				9B4A47B0178B3141005AE144 /* Images.xcassets */,
 				9B4A479C178B3141005AE144 /* Supporting Files */,
+				9B4A47D0178B351E005AE144 /* PresentedViewController.h */,
+				9B4A47D1178B351E005AE144 /* PresentedViewController.m */,
 			);
 			path = ModalViewController;
 			sourceTree = "<group>";
@@ -154,6 +163,15 @@
 				9B4A47C0178B3141005AE144 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9B4A47D4178B3865005AE144 /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				9B4A47D5178B38E4005AE144 /* PresentedViewController.png */,
+				9B4A47D6178B38E4005AE144 /* PresentingViewController.png */,
+			);
+			path = Docs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B4A47D3178B36C7005AE144 /* PresentedViewController.m in Sources */,
+				9B4A47D2178B36C1005AE144 /* PresentingViewController.m in Sources */,
 				9B4A47A6178B3141005AE144 /* IGGAppDelegate.m in Sources */,
 				9B4A47A2178B3141005AE144 /* main.m in Sources */,
 			);

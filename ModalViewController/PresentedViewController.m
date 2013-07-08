@@ -29,6 +29,14 @@
 	// Do any additional setup after loading the view.
 }
 
+
+- (IBAction)didSelectDone:(UIButton *)sender
+{
+    [self.delegate dismissPresentedViewController];
+}
+
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
