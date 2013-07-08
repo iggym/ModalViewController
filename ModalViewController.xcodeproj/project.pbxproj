@@ -15,7 +15,6 @@
 		9B4A47A6178B3141005AE144 /* IGGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4A47A5178B3141005AE144 /* IGGAppDelegate.m */; };
 		9B4A47A9178B3141005AE144 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B4A47A7178B3141005AE144 /* Main_iPhone.storyboard */; };
 		9B4A47AC178B3141005AE144 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B4A47AA178B3141005AE144 /* Main_iPad.storyboard */; };
-		9B4A47AF178B3141005AE144 /* IGGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4A47AE178B3141005AE144 /* IGGViewController.m */; };
 		9B4A47B1178B3141005AE144 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B4A47B0178B3141005AE144 /* Images.xcassets */; };
 		9B4A47B8178B3141005AE144 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4A47B7178B3141005AE144 /* XCTest.framework */; };
 		9B4A47B9178B3141005AE144 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4A4795178B3141005AE144 /* Foundation.framework */; };
@@ -47,14 +46,15 @@
 		9B4A47A5178B3141005AE144 /* IGGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGGAppDelegate.m; sourceTree = "<group>"; };
 		9B4A47A8178B3141005AE144 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		9B4A47AB178B3141005AE144 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		9B4A47AD178B3141005AE144 /* IGGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGGViewController.h; sourceTree = "<group>"; };
-		9B4A47AE178B3141005AE144 /* IGGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGGViewController.m; sourceTree = "<group>"; };
 		9B4A47B0178B3141005AE144 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9B4A47B6178B3141005AE144 /* ModalViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModalViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B4A47B7178B3141005AE144 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		9B4A47BF178B3141005AE144 /* ModalViewControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ModalViewControllerTests-Info.plist"; sourceTree = "<group>"; };
 		9B4A47C1178B3141005AE144 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9B4A47C3178B3141005AE144 /* ModalViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModalViewControllerTests.m; sourceTree = "<group>"; };
+		9B4A47CD178B31F7005AE144 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		9B4A47CE178B33C9005AE144 /* PresentingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentingViewController.h; sourceTree = "<group>"; };
+		9B4A47CF178B33C9005AE144 /* PresentingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +84,7 @@
 		9B4A4789178B3140005AE144 = {
 			isa = PBXGroup;
 			children = (
+				9B4A47CD178B31F7005AE144 /* README.md */,
 				9B4A479B178B3141005AE144 /* ModalViewController */,
 				9B4A47BD178B3141005AE144 /* ModalViewControllerTests */,
 				9B4A4794178B3141005AE144 /* Frameworks */,
@@ -114,12 +115,12 @@
 		9B4A479B178B3141005AE144 /* ModalViewController */ = {
 			isa = PBXGroup;
 			children = (
+				9B4A47CE178B33C9005AE144 /* PresentingViewController.h */,
+				9B4A47CF178B33C9005AE144 /* PresentingViewController.m */,
 				9B4A47A4178B3141005AE144 /* IGGAppDelegate.h */,
 				9B4A47A5178B3141005AE144 /* IGGAppDelegate.m */,
 				9B4A47A7178B3141005AE144 /* Main_iPhone.storyboard */,
 				9B4A47AA178B3141005AE144 /* Main_iPad.storyboard */,
-				9B4A47AD178B3141005AE144 /* IGGViewController.h */,
-				9B4A47AE178B3141005AE144 /* IGGViewController.m */,
 				9B4A47B0178B3141005AE144 /* Images.xcassets */,
 				9B4A479C178B3141005AE144 /* Supporting Files */,
 			);
@@ -254,7 +255,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B4A47AF178B3141005AE144 /* IGGViewController.m in Sources */,
 				9B4A47A6178B3141005AE144 /* IGGAppDelegate.m in Sources */,
 				9B4A47A2178B3141005AE144 /* main.m in Sources */,
 			);
