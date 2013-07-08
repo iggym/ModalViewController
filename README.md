@@ -10,18 +10,12 @@ Overview
  
 Description
 -----------
-A Modal View Controller example with comments. 
-There is a presenting view controller and a presented view controller. 
-Best practice suggests is for the presenting view controller to dismiss the presented view controller which means setting up delegate protocol.
+A Modal View Controller example. There is a presenting view controller and a presented view controller. 
+The best practice is for the presenting view controller to dismiss the presented view controller which means setting up delegate protocol.
 The PresentedViewController class defines a protocol that all users of the class must adopt. It has a single mandatory method that will be called when the presented view controller needs to be dismissed. 
 
 You can also pass data back to the presenting view controller. To do this you could add an argument to this method. The public interface definition of the class includes a weak reference to the delegate.
 
-The done button in the presented view controller is then wired to call the following action method when it is touched:
-    - (IBAction)didSelectDone:(UIButton *)sender
-{
-    [self.delegate dismissPresentedViewController];
-}
 
 
 ###The Presenting View Controller
