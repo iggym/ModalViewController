@@ -11,7 +11,7 @@ Overview
 Description
 -----------
 A Modal View Controller example. There is a presenting view controller and a presented view controller. 
-The best practice is for the presenting view controller to dismiss the presented view controller. This requires delegation. The Presented view controller defines a protocol method and a delegate property. The Presenting view controller adopts the protocol and implements the protocol method. 
+The best practice is for the presenting view controller to dismiss the presented view controller. This requires delegation. The Presented view controller defines a protocol method and a delegate property. The Presenting view controller adopts the `PresentedViewControllerDelegate` protocol. 
 You can also pass data back to the presenting view controller. To do this you could add an argument to this method. 
 
 ####The Presenting View Controller
