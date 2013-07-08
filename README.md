@@ -13,12 +13,12 @@ Description
 A Modal View Controller example with comments. 
 There is a presenting view controller and a presented view controller
 
-The Presenting View Controller
+###The Presenting View Controller
 
 ![alt presenter](https://raw.github.com/iggym/ModalViewController/master/Docs/PresentingViewController.png)
  
- The Presented View Controller
-  
+ ###The Presented View Controller
+
  ![alt presented](https://raw.github.com/iggym/ModalViewController/master/Docs/PresentedViewController.png)
  
 Requirements
