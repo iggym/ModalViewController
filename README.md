@@ -17,9 +17,8 @@ You can also pass data back to the presenting view controller. To do this you co
 ####The Presenting View Controller
 
 ![alt presenter](https://raw.github.com/iggym/ModalViewController/master/Docs/PresentingViewController.png)
- 
 
-####The Presented View Controller
+ ####The Presented View Controller
 
  ![alt presented](https://raw.github.com/iggym/ModalViewController/master/Docs/PresentedViewController.png)
  
@@ -31,7 +30,6 @@ You can also pass data back to the presenting view controller. To do this you co
 - (void)dismissPresentedViewController;
 @end
 ```
-
 
 #####Presenting View Controller adopts the PresentedViewControllerDelegate protocol
 ```objectivec
@@ -69,10 +67,6 @@ You can also pass data back to the presenting view controller. To do this you co
     
 }
 ```
-
-
-
-
 
 Requirements
 ------------
